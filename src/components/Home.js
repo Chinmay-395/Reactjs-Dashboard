@@ -1,5 +1,5 @@
 import React from "react";
-import LessonComponent from "./LessonComponent";
+import { LessonComponent, ComponentStructure } from "./LessonComponent";
 
 import styled from "styled-components";
 const GridWrapper = styled.div`
@@ -14,7 +14,6 @@ const GridWrapper = styled.div`
 export const Home = (props) => (
   <GridWrapper>
     <>
-      {/* <div className="container"> */}
       {/* First row with LESSONS TODOs & LEADERBOARD */}
       <div style={{ marginBottom: "1rem" }} className="row">
         <div className="col">
@@ -23,13 +22,7 @@ export const Home = (props) => (
             <div className="card-header">UPCOMMING LESSONS</div>
             <div className="card-body">
               {/* Each lesson row */}
-              <div className="row">
-                <div className="col">col1-DATE&TIME</div>
-                <div className="col">col2-Subject/Topic</div>
-                <div className="col">col3-Image</div>
-              </div>
-              <div className="row">row 2</div>
-              <div className="row">row 3</div>
+              <ComponentStructure />
             </div>
             <div className="card-footer">Footer</div>
           </div>
@@ -65,11 +58,17 @@ export const Home = (props) => (
       <div className="row">
         {/* 2/3 would be reserved for My-courses row and Graph row */}
         <div className="col-sm-9">
-          <div className="card">
+          <div style={{ border: "none" }} className="card">
             <div className="card-body">
               {/* Row 1 will use for My-Course */}
               <div className="row">
-                <div className="card">
+                <div
+                  style={{
+                    width: "100%",
+                    marginBottom: "1rem",
+                  }}
+                  className="card"
+                >
                   <div className="card-header">MY COURSES</div>
                   <div className="card-body">
                     {/* <h5 className="card-title">MY COURSES</h5> */}
@@ -80,7 +79,10 @@ export const Home = (props) => (
               </div>
               {/* Row 2 will use for Graph */}
               <div className="row">
-                <div className="card">
+                <div
+                  style={{ width: "100%", marginBottom: "1rem" }}
+                  className="card"
+                >
                   <div className="card-header">GRAPHS</div>
                   <div className="card-body">
                     {/* <h5 className="card-title">GRAPHS</h5> */}
@@ -94,17 +96,27 @@ export const Home = (props) => (
         </div>
         {/* 1/3 would be reserved for Homework progess */}
         <div className="col-sm-3">
-          <div className="card">
-            <div className="card-header">HOMEWORK</div>
+          <div style={{ border: "none" }} className="card">
             <div className="card-body">
-              <h5 className="card-title">HOMEWORK</h5>
-              HomeWork progress
+              <div className="row">
+                <div
+                  style={{
+                    width: "100%",
+                    marginBottom: "1rem",
+                  }}
+                  className="card"
+                >
+                  <div className="card-header">HOMEWORK</div>
+                  <div className="card-body">
+                    <h5 className="card-title">HOMEWORK</h5>
+                    HomeWork progress
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* </div> */}
-      <LessonComponent />
     </>
   </GridWrapper>
 );

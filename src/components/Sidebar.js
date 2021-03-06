@@ -35,7 +35,7 @@ class SideNav extends React.Component {
           path: "/NoMatch",
           name: "Dashboard",
           css: "fa fa-tachometer",
-          key: 3,
+          key: 2,
         },
         {
           path: "/NoMatch",
@@ -47,13 +47,13 @@ class SideNav extends React.Component {
           path: "/NoMatch",
           name: "Achievements",
           css: "fa fa-shield",
-          key: 3,
+          key: 4,
         },
         {
           path: "/NoMatch",
           name: "Forum",
           css: "fa fa-forumbee",
-          key: 3,
+          key: 5,
         },
       ],
     };

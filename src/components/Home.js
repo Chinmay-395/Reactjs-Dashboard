@@ -1,7 +1,9 @@
 import React from "react";
 import { LessonComponent, ComponentStructure } from "./LessonComponent";
-
+import TodoComponent from "./TodoComponent";
+//styles
 import styled from "styled-components";
+import LeaderBoard from "./LeaderBoard";
 const GridWrapper = styled.div`
   display: grid;
   // grid-gap: 10px;
@@ -32,10 +34,7 @@ export const Home = (props) => (
           <div className="card">
             <div className="card-header">TODOs</div>
             <div className="card-body">
-              {/* <h5 className="card-title">TODOs</h5> */}
-              <div className="row">row 1</div>
-              <div className="row">row 2</div>
-              <div className="row">row 3</div>
+              <TodoComponent />
             </div>
             <div className="card-footer">Footer</div>
           </div>
@@ -45,10 +44,7 @@ export const Home = (props) => (
           <div className="card">
             <div className="card-header">LEADERBOARD</div>
             <div className="card-body">
-              {/* <h5 className="card-title">LEADERBOARD</h5> */}
-              <div className="row">row 1</div>
-              <div className="row">row 2</div>
-              <div className="row">row 3</div>
+              <LeaderBoard />
             </div>
             <div className="card-footer">Footer</div>
           </div>

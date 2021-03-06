@@ -1,6 +1,6 @@
 import React from "react";
 import lessonData from "./data/lesson_data";
-import CardComponent from "./hocs/CardComponent";
+// import CardComponent from "./hocs/CardComponent";
 
 export const ComponentStructure = () => {
   return (

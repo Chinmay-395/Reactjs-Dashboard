@@ -4,6 +4,7 @@ import TodoComponent from "./TodoComponent";
 //styles
 import styled from "styled-components";
 import LeaderBoard from "./LeaderBoard";
+import Courses from "./Courses";
 const GridWrapper = styled.div`
   display: grid;
   // grid-gap: 10px;
@@ -65,11 +66,16 @@ export const Home = (props) => (
                   }}
                   className="card"
                 >
-                  <div className="card-header">MY COURSES</div>
+                  <div className="card-header">
+                    <p style={{ textAlign: "left" }}>
+                      MY COURSES
+                      <span style={{ float: "right" }}>See All</span>
+                    </p>
+                  </div>
                   <div className="card-body">
-                    {/* <h5 className="card-title">MY COURSES</h5> */}
-                    This card body is for <strong>My courses</strong>
-                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+                    <>
+                      <Courses />
+                    </>
                   </div>
                 </div>
               </div>

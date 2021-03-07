@@ -5,6 +5,7 @@ import TodoComponent from "./TodoComponent";
 import styled from "styled-components";
 import LeaderBoard from "./LeaderBoard";
 import Courses from "./Courses";
+import GraphComponent from "./GraphComponent";
 const GridWrapper = styled.div`
   display: grid;
   // grid-gap: 10px;
@@ -87,9 +88,7 @@ export const Home = (props) => (
                 >
                   <div className="card-header">GRAPHS</div>
                   <div className="card-body">
-                    {/* <h5 className="card-title">GRAPHS</h5> */}
-                    This card body is for <strong>Graphs</strong>
-                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+                    <GraphComponent />
                   </div>
                 </div>
               </div>

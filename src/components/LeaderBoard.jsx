@@ -1,6 +1,6 @@
 import React from "react";
 import { leader_data } from "./data/leader_data";
-
+import "./LeaderBoardcss.css";
 function LeaderBoard() {
   console.log("THE LEADER", leader_data);
   return (

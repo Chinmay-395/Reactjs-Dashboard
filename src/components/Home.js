@@ -22,33 +22,30 @@ export const Home = (props) => (
       <div style={{ marginBottom: "1rem" }} className="row">
         <div className="col">
           {/* column 1 for Lessons */}
-          <div className="card">
+          <div className="card h-100">
             <div className="card-header">UPCOMMING LESSONS</div>
             <div className="card-body">
               {/* Each lesson row */}
               <ComponentStructure />
             </div>
-            <div className="card-footer">Footer</div>
           </div>
         </div>
         <div className="col">
           {/* cloumn 2 ToDos */}
-          <div className="card">
+          <div className="card h-100">
             <div className="card-header">TODOs</div>
             <div className="card-body">
               <TodoComponent />
             </div>
-            <div className="card-footer">Footer</div>
           </div>
         </div>
         <div className="col">
           {/* Column 3 Leaderboard */}
-          <div className="card">
+          <div className="card h-100">
             <div className="card-header">LEADERBOARD</div>
             <div className="card-body">
               <LeaderBoard />
             </div>
-            <div className="card-footer">Footer</div>
           </div>
         </div>
       </div>
@@ -56,7 +53,7 @@ export const Home = (props) => (
       <div className="row">
         {/* 2/3 would be reserved for My-courses row and Graph row */}
         <div className="col-sm-9">
-          <div style={{ border: "none" }} className="card">
+          <div style={{ border: "none" }} className="card h-100">
             <div className="card-body">
               {/* Row 1 will use for My-Course */}
               <div className="row">
@@ -65,7 +62,7 @@ export const Home = (props) => (
                     width: "100%",
                     marginBottom: "1rem",
                   }}
-                  className="card"
+                  className="card h-100"
                 >
                   <div className="card-header">
                     <p style={{ textAlign: "left" }}>
@@ -84,7 +81,7 @@ export const Home = (props) => (
               <div className="row">
                 <div
                   style={{ width: "100%", marginBottom: "1rem" }}
-                  className="card"
+                  className="card h-100"
                 >
                   <div className="card-header">GRAPHS</div>
                   <div className="card-body">
@@ -97,7 +94,7 @@ export const Home = (props) => (
         </div>
         {/* 1/3 would be reserved for Homework progess */}
         <div className="col-sm-3">
-          <div style={{ border: "none" }} className="card">
+          <div style={{ border: "none" }} className="card h-100">
             <div className="card-body">
               <div className="row">
                 <div
@@ -105,7 +102,7 @@ export const Home = (props) => (
                     width: "100%",
                     marginBottom: "1rem",
                   }}
-                  className="card"
+                  className="card h-100"
                 >
                   <div className="card-header">HOMEWORK</div>
                   <div className="card-body">

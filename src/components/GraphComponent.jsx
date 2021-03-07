@@ -5,7 +5,13 @@ function GraphComponent() {
   const [chartData, setChartData] = useState({});
   const chart = () => {
     setChartData({
-      labels: ["Computer Science", "Mathematics", "Physics"],
+      labels: [
+        "Computer Science",
+        "Calculus-I",
+        "Calculus-II",
+        "Astro-Physics",
+        "Programming Theory",
+      ],
       datasets: [
         {
           label: "Score",
@@ -26,7 +32,7 @@ function GraphComponent() {
           pointHoverBorderWidth: 2,
           pointRadius: 1,
           pointHitRadius: 10,
-          data: [85, 95, 80],
+          data: [85, 95, 80, 45, 76, 55],
         },
       ],
     });

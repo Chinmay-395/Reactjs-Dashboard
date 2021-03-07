@@ -33,7 +33,7 @@ const CardComponent = (props) => {
             to align multiple cards nicely in a row.
           </p> */}
         </div>
-        <div
+        {/* <div
           className="card-footer"
           style={{ background: " inherit", borderColor: "inherit" }}
         >
@@ -43,7 +43,7 @@ const CardComponent = (props) => {
           <a href="/#" className="btn btn-outline-primary">
             Other option
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

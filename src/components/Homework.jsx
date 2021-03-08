@@ -7,8 +7,7 @@ function Homework() {
       <div id="homework_card" className="card-homework">
         <div className="progress" style={{ width: "70%" }}></div>
         <div className="content">
-          <h3>Progress Card</h3>
-          <p>Card which uses the background colour to show progress.</p>
+          <h3>Math</h3>
           <p className="percentage">70%</p>
         </div>
       </div>

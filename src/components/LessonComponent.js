@@ -36,9 +36,6 @@ export const ComponentStructure = () => {
   );
 };
 function LessonComponent() {
-  const style = {
-    width: "100%",
-  };
   return (
     <>
       {/* <CardComponent card_style={style} custom_comp={ComponentStructure} /> */}

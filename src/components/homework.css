@@ -1,0 +1,47 @@
+.card-homework {
+  background-color: #eee;
+  box-sizing: border-box;
+  float: left;
+  height: 10em;
+  margin: 0.5em;
+  padding: 1em;
+  position: relative;
+  width: 20em;
+}
+
+.progress {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.progress:before {
+  animation: slideIn 2s ease-out;
+  background-color: #def;
+  bottom: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+}
+
+.percentage {
+  text-align: right;
+}
+
+@keyframes slideIn {
+  0% {
+    background-color: #abc;
+    width: 0;
+  }
+  100% {
+    background-color: #def;
+    width: 100%;
+  }
+}

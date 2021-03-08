@@ -1,11 +1,12 @@
 import React from "react";
-import { LessonComponent, ComponentStructure } from "./LessonComponent";
+import { ComponentStructure } from "./LessonComponent";
 import TodoComponent from "./TodoComponent";
 //styles
 import styled from "styled-components";
 import LeaderBoard from "./LeaderBoard";
 import Courses from "./Courses";
 import GraphComponent from "./GraphComponent";
+import Homework from "./Homework";
 const GridWrapper = styled.div`
   display: grid;
   // grid-gap: 10px;
@@ -106,8 +107,7 @@ export const Home = (props) => (
                 >
                   <div className="card-header">HOMEWORK</div>
                   <div className="card-body">
-                    <h5 className="card-title">HOMEWORK</h5>
-                    HomeWork progress
+                    <Homework />
                   </div>
                 </div>
               </div>
